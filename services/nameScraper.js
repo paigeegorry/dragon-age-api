@@ -9,7 +9,7 @@ const queries = [
   'Zinovia%2C+Eleni%0AEleni+Zinovia'
 ];
 
-const nameScaper = () => {
+module.exports = () => {
   return queries.map(query => {
     return request.get(`https://dragonage.fandom.com/wiki/Category:Characters?from=${query}`)
       .then(res => res.text)
