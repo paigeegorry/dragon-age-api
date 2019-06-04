@@ -1,0 +1,50 @@
+{
+  "name": "dragon-age-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "jest --verbose --runInBand --detectOpenHandles",
+    "test:watch": "jest --watch --verbose --runInBand --detectOpenHandles",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js",
+    "seed": "node seed.js",
+    "drop": "mongo dragonAge --eval 'db.dropDatabase()'",
+    "db-load-all": "npm run drop && npm run seed"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "identity-obj-proxy",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragon-age-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dragon-age-api/issues"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "express-ga-middleware": "^0.1.6",
+    "mongoose": "^5.5.8",
+    "node-html-parser": "^1.1.12",
+    "postcss": "^7.0.16",
+    "superagent": "^4.1.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0",
+    "jest": "^24.3.0",
+    "nodemon": "^1.19.0"
+  },
+  "homepage": "https://github.com/dragon-age-api#readme"
+}
