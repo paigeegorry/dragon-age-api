@@ -9,13 +9,14 @@ const queries = [
   'Zinovia%2C+Eleni%0AEleni+Zinovia'
 ];
 
-module.exports = () => {
+const nameScraper = () => {
   return queries.map(query => {
     return request.get(`https://dragonage.fandom.com/wiki/Category:Characters?from=${query}`)
       .then(res => res.text)
       .then(parse)
       .then(findCharLink)
       .then(findCharNames);
+    // .then(arrays => console.log([...arrays]));
   });
 };
 
@@ -24,3 +25,6 @@ const findCharNames = objs => {
   const names = objs.map(obj => obj.childNodes[0].rawText);
   return names.filter(name => !name.includes('Category:'));
 };
+
+nameScraper();
+
