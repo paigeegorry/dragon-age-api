@@ -21,18 +21,23 @@ const reformatData = ({ labels, values, photoInfo, name }) => {
       const affiliations = values[i].text.split('  ');
       obj.affiliations = affiliations.filter(aff => !aff.includes('('));
     }
+    else if(label === 'Title') {
+      obj.title = values[i].structuredText.split('\n');
+    }
+    else if(label === 'Family') {
+      console.log(values[i].structuredText.split('\n'));
+    }
     else {
       obj[label.toLowerCase()] = values[i].text;
     }
     obj.photo = photoInfo;
     obj.name = name;
-    // console.log(label);
   });
-  console.log(obj);
+  // console.log(obj);
 };
 
 const infoScraper = () => {
-  return request.get('https://dragonage.fandom.com/wiki/Iron_Bull')
+  return request.get('https://dragonage.fandom.com/wiki/Cullen_Rutherford')
     .then(res => res.text)
     .then(parse)
     .then(html => {
