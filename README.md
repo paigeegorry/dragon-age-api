@@ -5,7 +5,7 @@
 **[dragon-age-api.herokuapp.com](https://dragon-age-api.herokuapp.com/)**
 
 ## Overview
-This is an open-source API that provides character information from the Dragon Age franchise. This information is publicly sourced; I do not claim to own.
+This is an open-source API that provides character information from the Dragon Age series. This information is publicly sourced; I do not claim to own.
 
 ## Technologies used
 Node.js, [MongoDB](https://www.mongodb.com/what-is-mongodb), [Express](https://www.npmjs.com/package/express), [Jest](https://www.npmjs.com/package/jest), [SuperTest](https://www.npmjs.com/package/supertest), [nodemon](https://www.npmjs.com/package/nodemon), [dotenv](https://www.npmjs.com/package/dotenv), [Mongoose](https://www.npmjs.com/package/mongoose), [morgan](https://www.npmjs.com/package/morgan), [SuperAgent](https://www.npmjs.com/package/superagent), [node-html-parser](https://www.npmjs.com/package/node-html-parser)
