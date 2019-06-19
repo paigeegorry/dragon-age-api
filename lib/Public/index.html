@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Poppins|Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel|Nanum+Myeongjo|Playfair+Display+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Playfair+Display+SC|Quattrocento|Staatliches&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -11,16 +12,8 @@
   <title>Dragon Age API</title>
 </head>
 
-<body>
+<body style=margin:0>
   <header>
-    <div>
-      <img src="./assets/icon1.png" alt="interaction icon 1" />
-      <img src="./assets/icon2.png" alt="interaction icon 2" />
-      <img src="./assets/icon3.png" alt="interaction icon 3" />
-      <img src="./assets/icon5.png" alt="interaction icon 5" />
-      <img src="./assets/icon6.png" alt="interaction icon 6" />
-      <img src="./assets/icon7.png" alt="interaction icon 7" />
-    </div>
     <h1>Dragon Age API</h1>
   </header>
   <main>
@@ -31,31 +24,31 @@
       </tr>
       <tr>
         <td class="route"><span>GET /api/v1/characters</span></td>
-        <td>all characters <br />(default 50 per page / 792 total)</td>
+        <td>all characters <br /> <span class="detail">(default 50 per page / 792 total)</span></td>
       </tr>
       <tr>
         <td class="route"><span>GET /api/v1/characters?page=${number}</span></td>
-        <td>all characters: <br />pagination</td>
+        <td>all characters: <br /> <span class="detail">pagination</span></td>
       </tr>
       <tr>
         <td class="route"><span>GET /api/v1/characters?perPage=${number}</span></td>
-        <td>all characters: <br />customize how many show up per page</td>
+        <td>all characters: <br /> <span class="detail">customize how many show up per page</span></td>
       </tr>
       <tr>
         <td class="route"><span>GET /api/v1/characters/${CharacterId}</span></td>
         <td>a character by their id</td>
       </tr>
       <tr>
-        <td class="route"><span>GET /api/v1/characters/random</span></td>
-        <td>one random character</td>
+        <td class="route"><span>GET /api/v1/characters/random?count=${num}</span></td>
+        <td>a random character<br /> <span class="detail">count defaults to one</span></td>
       </tr>
       <tr>
           <td class="route"><span>GET /api/v1/characters?appearances=${value}</span></td>
-          <td>characters by appearance<br /> which game/comic they appeared in</td>
+          <td>characters by appearance<br /> <span class="detail">game/comic they appeared in</span></td>
       </tr>
       <tr>
           <td class="route"><span>GET /api/v1/characters?quests=${value}</span></td>
-          <td>characters by quest</td>
+          <td>characters by quest name</td>
       </tr>
     </table>
   </main>

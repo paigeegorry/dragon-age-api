@@ -1,31 +1,32 @@
-img {
-  width: 75px;
-  padding: 0px 15px 0px 15px;
+
+.detail {
+  font-size: .75em;
 }
 h1 {
-  margin: 5px 0px 10px 0px;
-  font-family: 'Playfair Display SC', serif;
-}
-div {
-  display: flex;
-  justify-content: space-around;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  text-shadow: 2px 2px black;
+  font-size: 3em;
 }
 header {
-  margin: 0 auto;
+  background-image: url('../assets/background.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: .8;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Quattrocento', serif;
   font-size: 2.25em;
-  border-bottom: 1px solid gray;
   padding: 10px;
-  width: 45vw;
+  height: 90vh;
+  width: 100vw;
 }
 table {
   padding: 50px;
   margin: 0 auto;
   margin-top: 20px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2em;
   width: 75vw;
 }
@@ -39,19 +40,20 @@ th {
   text-shadow: .5px .5px black;
 }
 td {
-  padding: 5px;
+  padding: 10px;
   text-align: center;
 }
 footer {
   padding: 10px;
-  font-size: 1em;
+  font-size: 1.15em;
   text-align: center;
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Poppins', sans-serif;
   margin-top: 50px; 
 }
 a {
   color: maroon;
   text-decoration: none;
+  text-transform: uppercase;
 }
 a:hover {
   background: maroon;
