@@ -2,7 +2,7 @@
 
 **Authors**: [Paige Gorry](https://github.com/paigeegorry)
 
-**[dragon-age-api.herokuapp.com/](https://dragon-age-api.herokuapp.com/)**
+**[dragon-age-api.herokuapp.com](https://dragon-age-api.herokuapp.com/)**
 
 ## Overview
 This is an open-source API that provides character information from the Dragon Age franchise. This information is publicly sourced; I do not claim to own.
@@ -12,7 +12,13 @@ Node.js, [MongoDB](https://www.mongodb.com/what-is-mongodb), [Express](https://w
 
 ## Routes
 _All routes are GET routes_
-* **GET /api/v1/characters** - get all characters (default 20 per page / 497 total characters)
+* **GET /api/v1/characters** - get all characters (default 50 per page / 792 total characters)
+* **GET /api/v1/characters/:id** - get character by id 
+* **GET /api/v1/characters?page=${num}** - get all characters / pagination
+* **GET /api/v1/characters?perPage=${num}** - change number of characters you get per page
+* **GET /api/v1/characters?appearances=${value}** - get characters by appearance / which game/comic they appeared in
+* **GET /api/v1/characters?quests=${value}** - get characters by quest
+* **GET /api/v1/characters/random** - get a random character
 
 ## Getting Started
 I welcome any and all contributions! Feel free to submit a Pull Request with your changes to make this a better API for everyone!
