@@ -4,13 +4,14 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "drop": "mongo dragonAge --eval 'db.dropDatabase()'",
+    "db-load-all": "npm run drop && npm run seed",
     "lint": "eslint .",
     "pretest": "npm run lint",
     "start": "node server.js",
     "start:watch": "nodemon server.js",
     "seed": "node seed.js",
-    "drop": "mongo dragonAge --eval 'db.dropDatabase()'",
-    "db-load-all": "npm run drop && npm run seed"
+    "test": "jest"
   },
   "jest": {
     "moduleNameMapper": {
