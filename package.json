@@ -37,7 +37,7 @@
     "express-ga-middleware": "^0.1.6",
     "mongoose": "^5.7.5",
     "node-html-parser": "^1.1.12",
-    "postcss": "^7.0.16",
+    "postcss": "^8.2.10",
     "superagent": "^4.1.0",
     "supertest": "^4.0.2"
   },
