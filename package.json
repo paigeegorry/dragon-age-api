@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "eslint": "^5.14.0",
-    "jest": "^24.3.0",
+    "jest": "^29.3.1",
     "nodemon": "^1.19.0"
   },
   "homepage": "https://github.com/dragon-age-api#readme"
