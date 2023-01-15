@@ -2,7 +2,10 @@
 
 **Authors**: [Paige Gorry](https://github.com/paigeegorry)
 
-**[dragon-age-api.herokuapp.com](https://dragon-age-api.herokuapp.com/)**
+<s>dragon-age-api.herokuapp.com</s>
+**[dragon-age-api.fly.dev](https://dragon-age-api.fly.dev/)**
+
+**DEPRECATION:** heroku app url is deprecated as of 1/15/23, please use the new fly.io url above for all requests
 
 ## Overview
 This is an open-source API that provides character information from the Dragon Age series. This information is publicly sourced; I do not claim to own.
